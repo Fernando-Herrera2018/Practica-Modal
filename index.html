@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src='https://kit.fontawesome.com/66f5e943e2.js' crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Ejemplo Modal</title>
+</head>
+
+<body>
+    <header>
+        <figure>
+            <img src="imagenes/logo.jpg" alt="">
+        </figure>
+    </header>
+
+    <section>
+        <article class="article1-informacion">
+            <div class="informacion">
+                <h5>Our Team</h5>
+                <h1>A Dedicated Team of Expert</h1>
+
+                <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et repudiandae aut animi architecto dolores
+                    illum.</h4>
+
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati ea sunt architecto quasi, magnam,
+                    consectetur et iste nulla, ex ipsam sequi sint facilis veniam iusto eos. Ratione ipsam odit quis
+                    dicta sint velit corrupti, nostrum obcaecati voluptate labore ea quod iure debitis nemo consequatur!
+                </p>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat labore commodi non beatae
+                    accusantium, quod dignissimos ipsam cum</p>
+
+                <div class="botones">
+                    <a class="btn" href="#">Learn More</a>
+                    <a class="btn2" href="#">View All Team</a>
+                </div>
+            </div>
+        </article>
+
+        <article class="article2-imagenes">
+            <div class="galeria">
+                <img src="imagenes/foto1.jpg" alt="">
+                <h3 class="nombre">Jessica Cooper</h3>
+                <p>Esthetician</p>
+                <div class="redes">
+                    <i class="fb fab fa-facebook-f"></i>
+                    <i class="tw fab fa-twitter"></i>
+                    <i class="pin fab fa-pinterest"></i>
+                </div>
+                <a href="#" id="Btn3">GET IN TOUCH</a>
+            </div>
+            <div class="galeria">
+                <img src="imagenes/foto2.jpg" alt="">
+                <h3 class="nombre">Robert Wagner</h3>
+                <p>Hairdresser</p>
+                <div class="redes">
+                    <i class="fb fab fa-facebook-f"></i>
+                    <i class="tw fab fa-twitter"></i>
+                    <i class="pin fab fa-pinterest"></i>
+                </div>
+                <a href="#" id="Btn4">GET IN TOUCH</a>
+            </div>
+        </article>
+    </section>
+      <section id="modal" class="contenidomodal">
+        <div class="estructuramodal">
+          <div class="titulo">
+            <i id="cerrarbtn"  class="rojo fas fa-times-circle"></i>
+          </div>
+          <div class="info">
+            <h2>Contact Us</h2>
+                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet consequatur </p>
+                  <form class="formulariobody">
+                      <input type="text" id="fname" name="fname" placeholder="Ingrese su nombre">
+                      <input type="email" id="email" name="email" placeholder="Ingrese su email">
+                      <input type="text" id="txt" name="texto" placeholder="Ingrese su mensaje">
+                      <input type="submit" id="submit" value="Submit">
+                  </form>
+          </div>
+        </div>
+      </section>
+     <script>
+        var mostrarmodal = document.getElementById("modal") ;
+        var cerrarmodal = document.getElementById("cerrarbtn") ;
+        var btnejecutar = document.getElementById("Btn3");
+        var btnejecutar2 = document.getElementById("Btn4");
+
+        btnejecutar.onclick = function(){
+        mostrarmodal.style.display = "block";
+      }
+
+      btnejecutar2.onclick = function(){
+        mostrarmodal.style.display = "block";
+      }
+
+      cerrarmodal.onclick = function(){
+        mostrarmodal.style.display = "none";
+      }
+
+      window.onclick = function (event) {
+        if (event.target == mostrarmodal) {
+          mostrarmodal.style.display = "none";
+        }
+      };
+  
+      </script>
+    <footer>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,255 @@
+:root {
+    --besh: #f5f0de;
+    --grisbajo: #f2f2f2;
+    --gris: #f2eddc;
+    --mamey: #f26363;
+  }
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    font-family: helvetica;
+    font-size: 16px;
+    line-height: 24px;
+    color: #333;
+  }
+  .ancho {
+    max-width: 1200px;
+    margin: auto;
+    border: 1px red solid;
+  }
+  header {
+    padding: 15px;
+    background-color: var(--besh);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    height: 70px;
+  }
+  section {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  /*Article 1*/
+  section .article1-informacion {
+    background-color: white;
+    padding-top: 1px;
+    padding-bottom: 50px;
+    width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+  }
+  section .informacion {
+    padding: 10px;
+  }
+  section .informacion h5 {
+    font-size: 18px;
+  }
+  section .informacion h1 {
+    padding-top: 10px;
+  }
+  section .informacion h4 {
+    padding-top: 30px;
+  }
+  section .informacion p {
+    padding-top: 10px;
+  }
+  section .informacion .botones {
+    display: flex;
+    justify-content: flex-start;
+    gap: 80px;
+    padding-top: 20px;
+  }
+  section .informacion .botones a {
+    text-decoration: none;
+  }
+  section .informacion .botones .btn {
+    width: 150px;
+    height: 40px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px rgb(244, 101, 98) solid;
+    background: rgb(244, 101, 98);
+    color: white;
+  }
+  section .informacion .botones .btn:hover {
+    border: 1px rgb(177, 67, 65) solid;
+    background: rgb(177, 67, 65);
+  }
+  section .informacion .botones .btn2 {
+    width: 150px;
+    height: 40px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px black solid;
+    color: black;
+  }
+  section .informacion .botones .btn2:hover {
+    color: white;
+    background-color: black;
+  }
+  /*Article 2*/
+  section .article2-imagenes {
+    width: 500px;
+    background-color: rgb(243, 241, 241);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding-top: 20px;
+  }
+  
+  section .article2-imagenes .galeria {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 230px;
+    padding-bottom: 20px;
+  }
+  section .article2-imagenes .galeria img {
+    border-radius: 100px;
+    width: 150px;
+    height: 150px;
+    margin-bottom: 10px;
+  }
+  
+  section .article2-imagenes .galeria .nombre {
+    color: rgb(244, 101, 98);
+  }
+  section .article2-imagenes .galeria .p {
+    color: gray;
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
+  section .article2-imagenes .galeria a {
+    width: 100%;
+    height: 40px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px rgb(244, 101, 98) solid;
+    background: rgb(244, 101, 98);
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+  }
+  section .article2-imagenes .galeria a:hover {
+    border: 1px rgb(177, 67, 65) solid;
+    background: rgb(177, 67, 65);
+  }
+  section .article2-imagenes .galeria .redes {
+    color: gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 10px;
+    padding-top: 15px;
+  }
+  .rojo{
+    color: red;
+    font-size: 30px;
+    cursor: pointer;
+  }
+  .contenidomodal{
+    display: none;
+    background-color: rgba(0, 0, 0, .6);
+    color: white;
+    width: 100%;
+    height: 100%;
+    padding-top: 50px;
+    position: fixed;
+    z-index: 10;
+    overflow: auto;
+    top: 0;
+    left: 0;
+  }
+  .titulo{
+    max-width: 670px;
+    padding: 20px;
+    display: flex;
+    justify-content:right;
+  
+  }
+  .estructuramodal{
+    margin-left: 35%;
+    padding: 15px;
+    background-color: white;
+    border-radius: 8px;
+    color: #333;
+    box-shadow: 0 0 10px #333;
+    width: 300px;
+  }
+  .formulariobody{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .formulariobody input{
+    height: 30px;
+    width: 100%;
+    border-radius: 20px;
+    border: 1px rgb(151, 149, 149) solid;
+  }
+  .formulariobody #txt{
+    height: 100px;
+  }
+  #submit{
+    width: 80px;
+    border: 1px rgb(244, 101, 98) solid;
+    background: rgb(244, 101, 98) ;
+    color: white;
+  }
+  #submit:hover{
+    border: 1px rgb(177, 67, 65) solid;
+    background: rgb(177, 67, 65) ;
+  }
+
+  footer {
+    background-color: var(--mamey);
+    height: 50px;
+  }
+  @media screen and (max-width: 1000px) {
+    section .article1-informacion {
+      width: 100%;
+      height: 100%;
+    }
+    section .article2-imagenes {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .estructuramodal{
+      margin-left: 20%;
+      width: 200px;
+    }
+  }
+  
+  @media screen and (max-width: 500px) {
+    section .informacion .botones {
+      flex-direction: column;
+      align-items: left;
+      gap: 20px;
+    }
+    .estructuramodal{
+      margin-left: 6%;
+      width: 200px;
+    }
+  }
